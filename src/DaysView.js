@@ -6,6 +6,10 @@ var React = require('react'),
 	onClickOutside = require('react-onclickoutside').default
 	;
 
+if(moment.default) {
+	moment = moment.default;
+}
+
 var DateTimePickerDays = onClickOutside( createClass({
 	render: function() {
 		var footer = this.renderFooter(),
