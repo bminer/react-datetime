@@ -8,6 +8,10 @@ var assign = require('object-assign'),
 	CalendarContainer = require('./src/CalendarContainer')
 	;
 
+if(moment.default) {
+	moment = moment.default;
+}
+
 var viewModes = Object.freeze({
 	YEARS: 'years',
 	MONTHS: 'months',
